@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Steven's About Me Page!</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+SC:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+      <script>
+        $(document).ready(function(){
+          $('#link1').hide();
+          $('#link2').hide();
+          $('#link3').hide();
+          $('#slider').hide();
+          $('.button1').on("click", function(){
+              $('#link2').slideUp("fast");
+              $('#link3').slideUp("fast");
+              $('#link1').slideDown("slow");
+            });
+          $('.button2').on("click", function(){
+              $('#link1').slideUp("fast");
+              $('#link3').slideUp("fast");
+              $('#link2').slideDown("slow");
+            });
+          $('.button3').on("click", function(){
+              $('#link2').slideUp("fast");
+              $('#link1').slideUp("fast");
+              $('#link3').slideDown("slow");
+            });
+          $('.imgSliderButton').on("click", function(){
+              $('#slider').slideDown("slow");
+            });
+          $('.upPic').on("click", function(){
+              $('#link1').slideUp("fast");
+              $('#link2').slideUp("fast");
+              $('#link3').slideUp("fast");
+            });
+          $('.upPic2').on("click", function(){
+              $('#slider').slideUp("fast");
+            });
+          });
+      </script>
+  </head>
+
+  <body>
+    <header class="clear">
+      <table class="image">
+      <caption align="bottom">Art from the middle school archives</caption>
+        <tr>
+          <td><img src="img/oldsteve.jpg"></td>
+        </tr>
+      </table>
+    </header>
+
+    <section id="aboutMe">
+      <p>About Me!</p>
+      <small>Who is this guy?</small><br />
+      <img src="img/steven.png">
+        <ul class="clear">
+          <li class="button1">Who is Steven?</li>
+          <li class="button2">My Experience</li>
+          <li class="button3">Contact Information</li>
+        </ul>
+    </section>
+
+    <section>
+      <div id="link1" class="linkStyle">
+        <br />
+        <p>Hello to everyone at General Assembly! Thanks for taking the time to check out my About Me page. My name is Steven Williams and at the time of this submission, I'm 27 years old and I currently live in Chamblee, Georgia (about 10 miles NE of Atlanta).</p>
+        <br />
+        <p>I was actually born in Georgia, but moved to Michigan for 5 years, then moved back to Georgia. The cool thing about that was just getting to grow up in a completely different climate.
+        So getting into my hobbies... I'm into Drawing, Music Production, Biking, Video Games, Cooking, and of course Coding!</p>
+        <br />
+        <img class="upPic" src="img/uparrow.png">
+      </div>
+
+      <div id="link2" class="linkStyle">
+      <br />
+        <p>Before I get into what got me into Coding, just to wanted to mention that I am currently using Code School, Team Treehouse, and Codecademy to learn code. I started seriously coding a few months ago back in March. I do not have any real work experience with coding nor did I go to school for it (Although I did take a few IT classes). Moving on!</p>
+        <br />
+        <p>So when I was growing up, my parents bought me the Nintendo Entertainment System. I was around 6 years old and couldn't even wrap my head around what was going on. My older cousin taught me how to play and that was it. I was hooked. I think it was around middle school that I seriously considered wanting to make videogames for a living. I downloaded an RPG Maker i found online and went to town. It taught me the basics of switches and variables which I am able to apply today.</p>
+        <br />
+        <p>At the same time, I've always had a passion for art and music. The art comes from watching another cousin of mine draw all the time. I was a kid and wanted to be like him so I drew all the time too. Then there's music. My parents exposed me to a lot of different music growing up, so i've have a deep appreciation for music.</p>
+        <br />
+        <p>So getting back to present day. I've been thinking of ways to mesh all those passions of mine together and the conclusion is Web Development. I've love to one day be able to create an app or game that uses my art and music. I love building and expressing myself creatively. Hopefully, we can all work together in the future!</p>
+        <br />
+        <img class="upPic" src="img/uparrow.png">
+      </div>
+
+      <div id="link3" class="linkStyle">
+        <br />
+        <h1>Feel free to contact me!</h1>
+        <a href="mailto:steven30135@gmail.com?subject=Just wanted to say Hi!"><img src="img/mail.png"></a>
+        <a href="tel:770-841-9802"><img src="img/phone.png"></a>
+        <br />
+        <h1>Or visit my social network pages!</h1>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=33013638"><img src="img/facebook.png"></a></li>
+          <li><a href="https://www.linkedin.com/pub/steven-williams/36/522/b90"><img src="img/linkedin.png"></a></li>
+          <li><a href="https://github.com/steven30135"><img src="img/github.png"></a></li>
+        </ul>
+        <br />
+        <img class="upPic" src="img/uparrow.png">
+      </div>
+    </section>
+
+    <div id="sliderButton">
+      <ul>
+        <li class="imgSliderButton">Bonus Pictures!</li>
+      </ul>
+    </div>
+
+    <section id="slider">
+      <div id="wowslider-container1">
+      <div class="ws_images"><ul>
+      <li><img src="data1/images/the_command_center.jpg" alt="The Command Center" title="The Command Center" id="wows1_0"/></li>
+      <li><img src="data1/images/working_on_a_mobile_site_for_a_friend.jpg" alt="Working on a mobile site for a friend" title="Working on a mobile site for a friend" id="wows1_1"/></li>
+      <li><img src="data1/images/art_for_a_game_i_created.jpg" alt="Art for a game I created" title="Art for a game I created" id="wows1_2"/></li>
+      </ul></div>
+      <div class="ws_bullets"><div>
+      <a href="#" title="The Command Center"><img src="data1/tooltips/the_command_center.jpg" alt="The Command Center"/>1</a>
+      <a href="#" title="Working on a mobile site for a friend"><img src="data1/tooltips/working_on_a_mobile_site_for_a_friend.jpg" alt="Working on a mobile site for a friend"/>2</a>
+      <a href="#" title="Art for a game I created"><img src="data1/tooltips/art_for_a_game_i_created.jpg" alt="Art for a game I created"/>3</a>
+      </div></div>
+      <span class="wsl"><a href="http://wowslider.com">jquery slideshow</a> by WOWSlider.com v5.4</span>
+      <div class="ws_shadow"></div>
+      </div>
+      <script type="text/javascript" src="engine1/wowslider.js"></script>
+      <script type="text/javascript" src="engine1/script.js"></script>
+      <br />
+      <img class="upPic2" src="img/uparrow.png">
+    </section>
+
+    <footer>
+      <table class="footerPic">
+      <caption align="bottom">How did you spend YOUR Memorial Day?</caption>
+        <tr>
+          <td><img src="img/bike.png"></td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

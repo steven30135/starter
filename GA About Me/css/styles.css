@@ -1,0 +1,173 @@
+
+body {
+	background: rgb(70,70,70);
+	background-size: cover;
+	max-width: 1000px;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+}
+
+
+/********** Header/Footer Styles **********/ 
+
+header {
+	border-bottom: 10px;
+}
+
+footer {
+
+}
+
+.content { 
+	display: none; 
+}
+
+caption {
+	color: white;
+	border-width: 3px;
+	border-color: white;
+}
+
+.image {
+	float: right;
+}
+
+.footerPic img{
+	width: 180px;
+	height: 230px;
+}
+
+/********** Styles for the About Me Section Element **********/
+
+#aboutMe, #sliderButton {
+	text-align: center;
+	background: url('../img/atlantaback.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-shadow: 3px 3px 5px black;
+	font-family: 'Alegreya SC', serif;
+	color: rgb(230,230,230);
+	border-radius: 10px 10px 0 0;
+}
+
+#aboutMe p{
+	font-size: 6em;
+	text-decoration: underline;
+	margin: 30px 0 0 0;
+	
+}
+
+#aboutMe small{
+	font-size: 2em;
+	
+}
+#aboutMe img {
+	border-radius: 200px;
+	border: 10px solid rgb(100,100,100);
+	margin: 25px;
+}
+
+#aboutMe ul {
+	background: rgba(0,0,0,.5);
+	color: white;
+}
+
+#aboutMe li {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	margin: 2px 40px;
+	padding: 5px 45px;
+	border-radius: 10px;
+	transition: background .4s ease 0s;
+	-webkit-transition: background .4s ease 0s;
+	-moz-transition: background .4s ease 0s;
+}
+
+#aboutMe li:hover {
+	background: rgba(30,30,30,1);
+	transition: background .8s ease 0s;
+	-webkit-transition: background .8s ease 0s;
+	-moz-transition: background .8s ease 0s;
+}
+
+/**********  Link Content Styles  **********/
+
+.linkStyle {
+	background: url('../img/pearl.png');
+	font-family: 'Raleway', sans-serif;
+	background-size: cover;
+	text-align: center;
+}
+
+img.upPic, img.upPic2{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.linkStyle li{
+	text-transform: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 1px;
+	
+}
+
+#link1, #link2 {
+	font-size: 2em;
+	border-radius: 10px;
+}
+
+#link1 p, #link2 p {
+	margin: 0 20px 0 20px;
+}
+
+
+
+/********** Slider Button Styles **********/
+
+#sliderButton {
+	background: rgb(130,130,130);
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 0px;
+	transition: background .4s ease 0s;
+	-webkit-transition: background .4s ease 0s;
+	-moz-transition: background .4s ease 0s;
+	font-family: 'Alegreya SC', serif;
+}
+
+#sliderButton li{
+	display: inline-block;
+	margin-left: -45px;
+	text-align: center;
+	padding: 5px 45px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+#sliderButton li:hover {
+	background: rgba(30,30,30,1);
+	transition: background .8s ease 0s;
+	-webkit-transition: background .8s ease 0s;
+	-moz-transition: background .8s ease 0s;
+}
+
+#slider {
+	border-radius: 0 0 10px 10px;
+	background: url('../img/atlantaback.png');
+}
+
+/********** Clear Fix **********/
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
